@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply hover:bg-[#FFE492] hover:text-[#043873] hover:border-[#FFE492] text-white border border-[#4F9CF9] rounded-[8px] bg-[#4F9CF9] h-[60px] w-[219px] duration-300 p-0 mt-[60px];
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-[36px] text-white font-[700] md:text-[54px];
+  }
+
+  .para-1 {
+    @apply text-white text-[18px] leading-7 pt-[24px];
+  }
+
+  .grid-1 {
+    @apply flex pl-5 pr-5 flex-col lg:flex-row lg:grid lg:grid-cols-2 items-center text-center lg:text-left mr-auto ml-auto;
+  }
+
+  .trans {
+    @apply hover:text-[#FFE492] duration-200 transition-colors cursor-pointer;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hidden {
+  display: block;
+}
